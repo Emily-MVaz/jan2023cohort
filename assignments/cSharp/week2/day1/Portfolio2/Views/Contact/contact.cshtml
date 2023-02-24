@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="~/css/universal.css">
+    <link rel="stylesheet" href="~/css/universal.css" />
+    <link rel="stylesheet" href="~/css/contact.css" />
     <title>Portfolio 2</title>
   </head>
   <body>
@@ -18,16 +19,24 @@
     </header>
     <main>
       <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-        
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        
-        <input type="button" value="Send">
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+
+        <div>
+          <label class="message" for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <span class="button">
+          <input id="button" type="button" value="Send" />
+        </span>
       </form>
     </main>
   </body>

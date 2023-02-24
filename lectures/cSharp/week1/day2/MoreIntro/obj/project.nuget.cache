@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Jj4gRf7Z4EpSwGyHGljnuSda/BV0aY6OOqDS3qo75jvocJyUe+WEcHIEy0Fe0Dt6HH7do79Wt9W5Krv7Iiasfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj",
+=======
+  "dgSpecHash": "riSNyAXPG+NfKkjmSARfB3yqDMtrG3oFa4RGwqGM4o6XNxOGcFabOsKUY4UQlQhwZ7cWjJLDAp7E8kFQweZWFw==",
+  "success": true,
+  "projectFilePath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj",
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
   "expectedPackageFiles": [],
   "logs": []
 }

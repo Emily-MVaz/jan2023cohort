@@ -22,12 +22,20 @@
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Home\\index.cshtml",
+=======
+      "FilePath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/SquishyViews/Views/Home/index.cshtml",
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
       "TargetPath": "Views\\Home\\index.cshtml",
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week2\\day1\\SquishyViews\\Views\\Squishy\\squishy.cshtml",
+=======
+      "FilePath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/SquishyViews/Views/Squishy/squishy.cshtml",
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
       "TargetPath": "Views\\Squishy\\squishy.cshtml",
       "FileKind": "mvc"
     }

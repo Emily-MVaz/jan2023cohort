@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GitOctoCats
 build_property.RootNamespace = GitOctoCats
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Emily\Desktop\code-dojo\jan2023cohort\lectures\cSharp\week2\day1\GitOctoCats\
+=======
+build_property.ProjectDir = /Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week2/day1/GitOctoCats/
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 

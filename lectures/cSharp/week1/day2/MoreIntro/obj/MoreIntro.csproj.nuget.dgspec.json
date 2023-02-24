@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Emily\\Desktop\\code-dojo\\jan2023cohort\\lectures\\cSharp\\week1\\day2\\MoreIntro\\MoreIntro.csproj": {}
   },
   "projects": {
@@ -15,16 +16,32 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emily\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj": {}
+  },
+  "projects": {
+    "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj",
+        "projectName": "MoreIntro",
+        "projectPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/MoreIntro.csproj",
+        "packagesPath": "/Users/irish/.nuget/packages/",
+        "outputPath": "/Users/irish/coding/work/CodingDojo/instruction/wos/jan2023cohort/lectures/cSharp/week1/day2/MoreIntro/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/irish/.nuget/NuGet/NuGet.Config"
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +52,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +70,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+>>>>>>> 4af513c5688136f2028f4e588820fef3abc88b57
         }
       }
     }

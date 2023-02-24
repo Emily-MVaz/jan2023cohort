@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em 25em;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header .navbar {
+  display: flex;
+  justify-content: center;
+}
+body header .navbar a {
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  color: #ffa0b0;
+}
+body header .navbar .active-page {
+  text-decoration: none;
+  color: black;
+}
+body header .navbar #projects-nav {
+  border-left: solid black 0.15em;
+  border-right: solid black 0.15em;
+}

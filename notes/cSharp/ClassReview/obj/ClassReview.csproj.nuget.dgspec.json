@@ -53,7 +53,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD:notes/cSharp/ClassReview/obj/ClassReview.csproj.nuget.dgspec.json
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+>>>>>>> ba3acc035ca8580a32d04f057a71f1a9536e592a:lectures/cSharp/week1/day5/Gardens/obj/Gardens.csproj.nuget.dgspec.json
         }
       }
     }

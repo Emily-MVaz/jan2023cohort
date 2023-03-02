@@ -4,27 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+
     <title>Dojo Survey</title>
   </head>
   <body>
     <main>
-      <form method="POST" action="addInfo">
-        <label for="Name">Your Name:</label>
-        <input type="text" name="YourName" />
+      <form method="post" action="result">
+        <div class="inputs">
+          <label for="name">Your Name:</label>
+          <input class="boxes" id="name-area" type="text" name="name" />
+        </div>
 
-        <label for="Location">Dojo Location:</label>
-        <select type="Location" name="YourName">
-          <option value="SanJose">San Jose</option>
-          <option value="SanJose">San Jose</option>
-          <option value="SanJose">San Jose</option>
-          <option value="SanJose">San Jose</option>
-        </select>
+        <div class="inputs">
+          <label for="location">Dojo Location:</label>
+          <select class="boxes" type="text" name="location" id="location">
+            <option value="SanJose">San Jose</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Miami">Miami</option>
+            <option value="Seattle">Seattle</option>
+          </select>
+        </div>
 
-        <label for="Name">Your Name:</label>
-        <input type="text" name="YourName" />
+        <div class="inputs">
+          <label for="language">Favorite Language:</label>
+          <select class="boxes" type="text" name="language" id="language">
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
 
-        <label for="Name">Your Name:</label>
-        <input type="text" name="YourName" />
+        <label id="comment-title" class="inputs" for="comment"
+          >Comment (optional):</label
+        >
+        <textarea
+          id="comment-area"
+          class="inputs"
+          rows="10"
+          cols="30"
+          name="comment"
+          type="text"
+        ></textarea>
+
+        <span>
+          <a href="./result">
+            <input
+              class="button"
+              type="submit"
+              id="submit-butt"
+              value="Submit"
+            />
+          </a>
+        </span>
       </form>
     </main>
   </body>

@@ -1,0 +1,93 @@
+body {
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Raleway";
+  background-color: #f9ecb6;
+}
+body main {
+  background-color: white;
+  border: 2px solid #86715a;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 1em;
+}
+body main form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-size: 1.5em;
+}
+body main form .inputs {
+  height: 1.5em;
+  margin: 1em 0;
+  color: #86715a;
+}
+body main form .inputs label {
+  display: inline-block;
+  width: 50%;
+}
+body main form .inputs .boxes {
+  font-family: "Raleway";
+  width: 49%;
+  height: 3.5em;
+  font-size: 0.75em;
+  color: #86715a;
+  border: 1px solid #86715a;
+  border-radius: 0.5em;
+}
+body main form .inputs #name-area {
+  width: 47.9%;
+}
+body main form #comment-title {
+  margin-top: 1.75em;
+}
+body main form #comment-area {
+  font-family: "Raleway";
+  margin-top: -1em;
+  height: 50%;
+  border: 1px solid #86715a;
+  border-radius: 0.5em;
+  font-size: 0.85em;
+}
+body main span {
+  display: flex;
+  justify-content: flex-end;
+}
+body main span .button {
+  color: #86715a;
+  background-color: #efda82;
+  box-shadow: 3px 3px 5px #534537;
+  padding: 0.25em 0.75em;
+  font-size: 1em;
+  text-align: right;
+  width: fit-content;
+  border: #efda82;
+  font-family: "Raleway";
+}
+body .result-main {
+  padding: 2em 3em;
+}
+body .result-main h1 {
+  font-size: 2em;
+  text-decoration: underline;
+  font-weight: normal;
+  color: #86715a;
+}
+body .result-main .info {
+  font-size: 1.5em;
+  color: #86715a;
+}
+body .result-main .info p {
+  margin-bottom: 0.5em;
+}
+body .result-main #back-butt {
+  font-size: 1.5em;
+  margin-top: 5em;
+}
+body .change-page {
+  color: hotpink;
+  font-size: x-large;
+  text-decoration: none;
+}

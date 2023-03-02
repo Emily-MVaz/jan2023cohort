@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace ResultController.Controllers;
+namespace DojoSurvey.Controllers;
 public class HomeController : Controller
 {
   [HttpGet("")]
   public ViewResult Index()
   {
-    return View("Index");
+    return View();
   }
 }
-

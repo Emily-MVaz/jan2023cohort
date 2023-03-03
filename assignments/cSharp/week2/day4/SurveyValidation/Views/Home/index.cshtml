@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+
+    <title>Dojo Survey</title>
+  </head>
+  <body>
+    <main>
+      <form method="post" asp-controller="Home" asp-action="result">
+        <div class="inputs">
+          <label for="name">Your Name:</label>
+          <input
+            class="boxes"
+            id="name-area"
+            type="text"
+            name="name"
+            asp-for="Name"
+          />
+        </div>
+
+        <div class="inputs">
+          <label for="location">Dojo Location:</label>
+          <select
+            class="boxes"
+            type="text"
+            name="location"
+            id="location"
+            asp-for="Location"
+          >
+            <option value="SanJose">San Jose</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Miami">Miami</option>
+            <option value="Seattle">Seattle</option>
+          </select>
+        </div>
+
+        <div class="inputs">
+          <label for="language">Favorite Language:</label>
+          <select
+            class="boxes"
+            type="text"
+            name="language"
+            id="language"
+            asp-for="Language"
+          >
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+
+        <label id="comment-title" class="inputs" for="comment"
+          >Comment (optional):</label
+        >
+        <textarea
+          id="comment-area"
+          class="inputs"
+          rows="10"
+          cols="30"
+          name="comment"
+          type="text"
+          asp-for="Comment"
+        ></textarea>
+
+        <span>
+          <a href="./result">
+            <input
+              class="button"
+              type="submit"
+              id="submit-butt"
+              value="Submit"
+            />
+          </a>
+        </span>
+      </form>
+    </main>
+  </body>
+</html>

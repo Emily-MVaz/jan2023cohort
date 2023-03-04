@@ -35,30 +35,25 @@ public class HomeController : Controller
     return View("result");
   }
 
-  //   [HttpPost("/result")]
-  //   public IActionResult CreateUser(string name, string location, string language, string comment)
-  //   {
-  //     ViewBag.Name = $"{name}";
-  //     ViewBag.Location = $"{location}";
-  //     ViewBag.Language = $"{language}";
-  //     ViewBag.Comment = $"{comment}";
-
-  //     return View("result");
-  //   }
-
-  [HttpGet("/result")]
-  public IActionResult Result()
+  [HttpPost("/result")]
+  public IActionResult CreateUser(string name, string location, string language, string comment)
   {
-    User newUser = new User()
-    {
-      Name = "emily",
-      Location = "location",
-      Language = "abc",
-      Comment = "abc123465464"
+    ViewBag.Name = $"{name}";
+    ViewBag.Location = $"{location}";
+    ViewBag.Language = $"{language}";
+    ViewBag.Comment = $"{comment}";
 
+    return View("result");
+  }
 
-    };
-    return View(newUser);
+  [HttpGet("/result2")]
+  public IActionResult NewView()
+  {
+    ViewBag.Name = "Name";
+    ViewBag.Location = "Location";
+    ViewBag.Language = "Fav Language";
+    ViewBag.Comment = "A comment is here";
+    return View("NewView");
   }
 
 }

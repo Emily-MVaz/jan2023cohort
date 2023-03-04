@@ -13,16 +13,22 @@
     <title>Dojo Survey</title>
   </head>
   <body>
+    @model Result
     <main>
-      <form method="post" action="result">
+      <form method="post" asp-controller="Home" asp-action="CreateUser">
         <div class="inputs">
           <label for="name">Your Name:</label>
-          <input class="boxes" id="name-area" type="text" name="name" />
+          <!--*   NAME  -->
+          <span asp-validation-for="Name"></span>
+          <input class="boxes" id="name-area" asp-for="Name" />
         </div>
 
         <div class="inputs">
           <label for="location">Dojo Location:</label>
-          <select class="boxes" type="text" name="location" id="location">
+          <!--*   LOCATION  -->
+          <span asp-validation-for="Location"></span>
+          <select class="boxes" asp-for="Location" id="location">
+            <option value="" default="" selected="">Select Location</option>
             <option value="SanJose">San Jose</option>
             <option value="Dallas">Dallas</option>
             <option value="Miami">Miami</option>
@@ -32,7 +38,10 @@
 
         <div class="inputs">
           <label for="language">Favorite Language:</label>
-          <select class="boxes" type="text" name="language" id="language">
+          <!--*   LANGUAGE  -->
+          <span asp-validation-for="Language"></span>
+          <select class="boxes" asp-for="Language" id="language">
+            <option value="" default="" selected="">Select language</option>
             <option value="C#">C#</option>
             <option value="Java">Java</option>
             <option value="Javascript">Javascript</option>
@@ -43,16 +52,17 @@
         <label id="comment-title" class="inputs" for="comment"
           >Comment (optional):</label
         >
+        <!--*   COMMENT  -->
+        <span asp-validation-for="Comment"></span>
         <textarea
           id="comment-area"
           class="inputs"
           rows="10"
           cols="30"
-          name="comment"
-          type="text"
+          asp-for="Comment"
         ></textarea>
 
-        <span>
+        <span class="button-span">
           <a href="./result">
             <input
               class="button"

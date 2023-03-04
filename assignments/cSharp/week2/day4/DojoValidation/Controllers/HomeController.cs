@@ -13,7 +13,8 @@ public class HomeController : Controller
     _logger = logger;
   }
 
-  public IActionResult Index()
+  [HttpGet("")]
+  public ViewResult Index()
   {
     return View();
   }
@@ -29,28 +30,5 @@ public class HomeController : Controller
     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
   }
 
-  [HttpGet("/result")]
-  public IActionResult ViewResult(string name, string location, string language, string comment)
-  {
-    ViewBag.Name = $"{name}";
-    ViewBag.Location = $"{location}";
-    ViewBag.Language = $"{language}";
-    ViewBag.Comment = $"{comment}";
-    Person newUser = new Person(){
-      
-    }  
-    return View("result");
 
-  }
-
-  // [HttpPost("/result")]
-  // public IActionResult CreateUser(string name, string location, string language, string comment)
-  // {
-  //   ViewBag.Name = $"{name}";
-  //   ViewBag.Location = $"{location}";
-  //   ViewBag.Language = $"{language}";
-  //   ViewBag.Comment = $"{comment}";
-
-  //   return View("result");
-  // }
 }

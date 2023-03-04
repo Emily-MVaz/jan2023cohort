@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Results</title>
+  </head>
+
+  @model Result
+  <body>
+    <main class="result-main">
+      <h1>Submitted Info</h1>
+
+      <div class="info">
+        <div class="response">
+          <p>Name:</p>
+          <p>@Model.Name</p>
+        </div>
+
+        <div class="response">
+          <p>Dojo Location:</p>
+          <p>@Model.Location</p>
+        </div>
+
+        <div class="response">
+          <p>Favorite Language:</p>
+          <p>@Model.Language</p>
+        </div>
+
+        <div class="response">
+          <p>Comment</p>
+          <p>@Model.Comment</p>
+        </div>
+      </div>
+
+      <span class="button-span">
+        <a href="./">
+          <input class="button" type="button" id="back-butt" value="Go Back" />
+        </a>
+      </span>
+    </main>
+  </body>
+</html>

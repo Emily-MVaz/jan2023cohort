@@ -1,5 +1,6 @@
+#pragma warning disable CS8618
 // Using System.ComponentModel.DataAnnotations
-namespace Result.Models;
+namespace SurveyResult.Models;
 public class Result
 {
   public string Name { get; set; }

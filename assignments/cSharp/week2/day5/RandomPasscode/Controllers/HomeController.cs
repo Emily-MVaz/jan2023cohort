@@ -15,14 +15,9 @@ public class HomeController : Controller
 
   public IActionResult Index()
   {
-    HttpContext.Session.SetInt32("number", 1);
-    int count = Convert.ToInt32(HttpContext.Session.GetInt32("number"));
+    HttpContext.Session.SetInt32("session", 1);
+    int count = Convert.ToInt32(HttpContext.Session.GetInt32("session"));
     return View(count);
-  }
-
-  public IActionResult Privacy()
-  {
-    return View();
   }
 
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -34,10 +29,10 @@ public class HomeController : Controller
   [HttpGet("generate")]
   public IActionResult Generate()
   {
-    int count = Convert.ToInt32(HttpContext.Session.GetInt32("number"));
+    int count = Convert.ToInt32(HttpContext.Session.GetInt32("session"));
     count++;
-    HttpContext.Session.SetInt32("number", count);
-    return View("Index", count);  
+    HttpContext.Session.SetInt32("session", count);
+    return View("Index", count);
   }
 
 }

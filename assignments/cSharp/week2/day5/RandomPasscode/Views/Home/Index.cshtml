@@ -25,7 +25,6 @@
           >
         @{
           Random rand = new Random();
-
           string valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
           char[] arr = new char[14];
           for(int i = 0; i < arr.Length; i++ ){
@@ -38,9 +37,13 @@
         </textarea
           >
         </div>
-        <form href="Generate" class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+        <form class="card-footer">
+          <button class="btn">
+            <a id="generate" href="Generate">Generate Passcode</a>
+          </button>
         </form>
+
+        <!-- <button id="generate" class="btn"><a href="Generate">Generate Password</a></button> -->
       </div>
     </div>
   </body>

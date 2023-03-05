@@ -24,17 +24,23 @@
             aria-label="Generated Password"
           >
         @{
-          Random rand = new Radnom();
+          Random rand = new Random();
 
-          string valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+          string valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+          char[] arr = new char[14];
+          for(int i = 0; i < arr.Length; i++ ){
+            arr[i] = valid[rand.Next(valid.Length)];
           }
+          string passcode = new string(arr);
+          @passcode
         }
+        
         </textarea
           >
         </div>
-        <div class="card-footer">
+        <form href="Generate" class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
-        </div>
+        </form>
       </div>
     </div>
   </body>

@@ -14,6 +14,6 @@ public class Result
   [Required(ErrorMessage = "Favorite Language is required.")]
   public string Language { get; set; }
 
-  [MinLength(8, ErrorMessage = "Comments must be at least 20 characters")]
+  [MinLength(20, ErrorMessage = "Comments must be at least 20 characters")]
   public string? Comment { get; set; }
 }

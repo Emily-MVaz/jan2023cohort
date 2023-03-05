@@ -12,8 +12,8 @@ public class DateController : Controller
     return View();
   }
 
-  [HttpGet("chooseDate")]
-  public IActionResult ChooseDate(Date date)
+  [HttpGet("checkDate")]
+  public IActionResult checkDate(Date date)
   {
     if (ModelState.IsValid)
     {

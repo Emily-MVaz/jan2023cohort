@@ -10,7 +10,7 @@ body main .choose-date {
   background-color: #bdaed3;
   border-radius: 1em;
   text-align: center;
-  padding: 5em;
+  padding: 3em 5em;
   margin-top: 10em;
   display: flex;
   flex-direction: column;
@@ -26,4 +26,23 @@ body main .choose-date input {
   border-radius: 0.5em;
   border-style: none;
   font-size: 1.5em;
+  width: fit-content;
+  margin: 0 auto;
+}
+body main .choose-date button {
+  background-color: #8673a1;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.25em 0.75em;
+  color: #efe5f3;
+  font-size: 1.25em;
+}
+body main .choose-date span {
+  color: #530a7e;
+}
+body main .choose-date h2 {
+  color: #530a7e;
 }

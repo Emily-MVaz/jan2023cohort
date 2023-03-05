@@ -9,9 +9,9 @@
     <title>Document</title>
   </head>
   <body>
-    @model Date
     <main>
-      <form class="choose-date" action="chooseDate">
+      <form class="choose-date" action="checkDate">
+        @model Date
         <span asp-validation-for="date_time"></span>
         <label asp-for="date_time">Choose a Date:</label>
         <input type="date" asp-for="date_time" />

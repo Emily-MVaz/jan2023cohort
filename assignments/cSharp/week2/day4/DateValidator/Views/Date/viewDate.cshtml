@@ -9,10 +9,13 @@
     <title>Document</title>
   </head>
   <body>
-    @model Date
     <main>
+      @model Date
       <div class="choose-date">
         <h2>@Model.date_time.ToString("MMM dd, yyyy")</h2>
+        <form action="/">
+          <button>Choose Another Date</button>
+        </form>
       </div>
     </main>
   </body>

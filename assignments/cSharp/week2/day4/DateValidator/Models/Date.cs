@@ -15,7 +15,7 @@ public class FutureDateAttribute : ValidationAttribute
     TimeSpan diff = DateTime.Now - (DateTime)value;
     if (diff < TimeSpan.Zero)
     {
-      return new ValidationResult("Date must be earlier than the current date");
+      return new ValidationResult("Please choose a date earlier than the current date.");
     }
     return ValidationResult.Success;
   }

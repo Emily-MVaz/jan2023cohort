@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+.wrapper {
+  padding-top: 2em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+header {
+  text-align: center;
+  padding: 1.25em;
+  color: #3b4954;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 0.25em;
+  box-shadow: #00000026 0px 2px 8px 0px;
+  color: #3b4954;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 44.5em;
+  padding: 1.65em 2.5em;
+}
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+.card-body {
+  min-height: 6.25em;
+}
+.card-footer {
+  text-align: center;
+}
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.btn {
+  border: none;
+  background-color: #e83b47;
+  border-radius: 1.6em;
+  box-shadow: #ffb4b41a 0px 1px 6px 0px #00000033 0px 1px 1px 0px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+.float-right {
+  float: right;
+}
+#password {
+  width: 100%;
+  padding: 15px 15px 85px 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px 0;
+  border: 2px dashed #ff7b83;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+  #password {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}

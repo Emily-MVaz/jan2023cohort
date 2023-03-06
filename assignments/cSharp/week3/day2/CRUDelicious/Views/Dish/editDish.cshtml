@@ -1,0 +1,64 @@
+@{ ViewData["Title"] = "Edit Page"; }
+
+<h1>Edit dish</h1>
+
+@model Dish
+
+<form
+  asp-action="Update"
+  asp-controller="Dish"
+  asp-route-dishId="@Model.DishId"
+  method="post"
+>
+  <div class="dish-edit">
+    <!--* CHEF NAME -->
+    <section>
+      <label asp-for="Chef">Chef's Name</label>
+      <input asp-for="Chef" type="text" value="@Model.Chef" />
+      <span asp-validation-for="Chef"></span>
+    </section>
+
+    <!--* DISH NAME -->
+    <section>
+      <label asp-for="Name">Name of Dish</label>
+      <input asp-for="Name" type="text" value="@Model.Name" />
+      <span asp-validation-for="Name"></span>
+    </section>
+
+    <!--* CALORIES -->
+    <section>
+      <label asp-for="Calories"># of Calories</label>
+      <input asp-for="Calories" type="int" value="@Model.Calories" />
+      <span asp-validation-for="Calories"></span>
+    </section>
+  </div>
+
+  <!--* TASTINESS -->
+  <section>
+    <label asp-for="Tastiness">Tastiness</label>
+    <select asp-for="Tastiness" value="@Model.Tastiness">
+      <option value="">Choose</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <span asp-validation-for="Tastiness"></span>
+  </section>
+
+  <!--* DESCRIPTION -->
+  <section>
+    <label asp-for="Description"></label>
+    <textarea
+      asp-for="Description"
+      cols="55"
+      rows="7"
+      value="@Model.Description"
+    ></textarea>
+    <span asp-validation-for="Description"></span>
+  </section>
+
+  <!--* BUTTONS -->
+  <button>Update Dish</button>
+</form>

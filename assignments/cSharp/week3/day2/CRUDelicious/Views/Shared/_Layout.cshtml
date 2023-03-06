@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CRUDelicious</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link
+      rel="stylesheet"
+      href="~/CRUDelicious.styles.css"
+      asp-append-version="true"
+    />
+  </head>
+  <body>
+    @RenderSection("Title",false)
+
+    <nav class="mt-3">
+      <ul class="nav justify-content-center h5">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dishes/new">Add Dish</a>
+        </li>
+      </ul>
+    </nav>
+
+    @RenderBody()
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@{ ViewData["Title"] = "Dish View"; } 
+
+@model Dish 
+
+@section Title{
+
+<!--* DISH NAME  -->
+<h1>@Model.Name</h1>
+}
+
+<div class="dish-info">
+  <!--* DISH & CHEF NAME  -->
+  <h3>@Model.Name by @Model.Chef</h3>
+
+  <!--* DESCRIPTION -->
+  <p>@Model.Description</p>
+
+  <!--*CALORIES -->
+  <p>Calories: @Model.Calories</p>
+
+  <!--* TASTINESS -->
+  <p>Tastiness: @Model.Tastiness</p>
+
+  <!--* BUTTONS-->
+  <a href="/dish/@Model.DishId/delete">Delete</a>
+  <a href="/dishes/@Model.DishId/edit">Edit</a>
+
+  <button><a href="/">Go Back</a></button>
+</div>

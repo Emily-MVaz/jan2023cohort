@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  border: solid 1em #ffb477;
 }
 
 @media (min-width: 768px) {
@@ -14,5 +15,38 @@ html {
 }
 
 body {
+  font-family: "Quicksand";
   margin-bottom: 60px;
+  color: #6a6a6a;
+}
+
+#home-nav {
+  border-right: 3px solid white;
+  height: 1.5em;
+}
+
+#nav-bar {
+  margin: 0 0.25em;
+}
+
+.text-center {
+  margin-top: 3em;
+}
+
+h1 {
+  /* color: #ff7300; */
+  color: white;
+  font-size: 4.5em;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background-color: #ffb477;
+  height: 100%;
+  padding: 1em;
+  border: 1em white solid;
 }

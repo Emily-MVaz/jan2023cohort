@@ -1,0 +1,29 @@
+.index-main {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: fit-content;
+}
+.index-main h3 {
+  border-bottom: 2px solid #ff8c2f;
+  color: #ff8c2f;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.index-main ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+.index-main ul li {
+  padding-bottom: 0.5em;
+}
+.index-main ul li a {
+  text-decoration: none;
+  color: #ff8c2f;
+}
+.index-main ul li a:hover {
+  background-color: #ff8d2fd5;
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}

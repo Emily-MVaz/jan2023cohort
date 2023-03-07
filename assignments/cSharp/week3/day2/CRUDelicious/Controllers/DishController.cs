@@ -25,7 +25,7 @@ public class DishController : Controller
   {
     if (!ModelState.IsValid)
     {
-      return View("new");
+      return View("addDish");
     }
     _context.Dishes.Add(dish);
     _context.SaveChanges();

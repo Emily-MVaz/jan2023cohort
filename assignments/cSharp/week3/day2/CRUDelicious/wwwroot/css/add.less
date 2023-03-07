@@ -1,0 +1,81 @@
+.dish-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.75em;
+
+  section {
+    label {
+      margin-bottom: 0.25em;
+      color: #ff8c2f;
+      font-weight: 500;
+    }
+
+    input {
+      border: 2px solid #8d8d8d;
+    }
+
+    span {
+      font-size: 0.65em;
+    }
+  }
+
+  .section1 {
+    width: 25%;
+    section {
+      margin-bottom: 1.5em;
+    }
+    .chef {
+      display: flex;
+      flex-direction: column;
+    }
+    .dish {
+      display: flex;
+      flex-direction: column;
+    }
+    .calories {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .section2 {
+    width: 15%;
+    .tasty {
+      display: flex;
+      flex-direction: column;
+    }
+
+    select {
+      border: 2px solid #8d8d8d;
+    }
+  }
+
+  .section3 {
+    width: 35%;
+    .text-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      border: 2px solid #8d8d8d;
+    }
+
+    button {
+      width: 30%;
+      margin: 1em 0 0 12.75em;
+      background-color: #ffb477;
+      color: white;
+      border: none;
+      border-radius: 0.25em;
+    }
+
+    button:hover {
+      background-color: #ff8c2f;
+    }
+
+    #update-button {
+      width: fit-content;
+    }
+  }
+}

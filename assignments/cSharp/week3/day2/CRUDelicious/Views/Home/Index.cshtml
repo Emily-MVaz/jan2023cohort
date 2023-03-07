@@ -1,16 +1,19 @@
 ﻿@{ ViewData["Title"] = "CRUDelicious"; }
 
 
+<head>
+  <link rel="stylesheet" href="~/css/index.css">
+</head>
 
-@section Title{ 
-  <div class="text-center">
-    <h1 class="display-4">Welcome to CRUDelicious</h1>
-  </div>
-}
-
-<div>
+  @section Title{ 
+    <div class="text-center">
+      <h1>Welcome to CRUDelicious</h1>
+    </div>
+  }
+  
+<div class="index-main">
   @model List<Dish>
-    <h3>Check out some recent dishes</h3>
+    <h3>Check out some recent dishes: </h3>
     @foreach(Dish d in Model)
     {
       <ul>

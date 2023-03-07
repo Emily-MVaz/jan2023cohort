@@ -1,29 +1,36 @@
 @{ ViewData["Title"] = "Dish View"; } 
 
-@model Dish 
+@model Dish
 
+<head>
+  <link rel="stylesheet" href="~/css/view.css" />
+</head>
 @section Title{
 
-<!--* DISH NAME  -->
-<h1>@Model.Name</h1>
+<div class="text-center">
+  <!--* DISH NAME  -->
+  <h1>@Model.Name</h1>
+</div>
 }
 
-<div class="dish-info">
-  <!--* DISH & CHEF NAME  -->
-  <h3>@Model.Name by @Model.Chef</h3>
+<div class="info-container">
+  <div class="dish-info">
+    <!--* DISH & CHEF NAME  -->
+    <h3>@Model.Name by @Model.Chef</h3>
 
-  <!--* DESCRIPTION -->
-  <p>@Model.Description</p>
+    <!--* DESCRIPTION -->
+    <p>@Model.Description</p>
 
-  <!--*CALORIES -->
-  <p>Calories: @Model.Calories</p>
+    <!--*CALORIES -->
+    <p>Calories: @Model.Calories</p>
 
-  <!--* TASTINESS -->
-  <p>Tastiness: @Model.Tastiness</p>
+    <!--* TASTINESS -->
+    <p>Tastiness: @Model.Tastiness</p>
+  </div>
 
   <!--* BUTTONS-->
-  <a href="/dish/@Model.DishId/delete">Delete</a>
-  <a href="/dishes/@Model.DishId/edit">Edit</a>
-
-  <button><a href="/">Go Back</a></button>
+  <div class="buttons">
+    <a class="delete" href="/dish/@Model.DishId/delete">Delete</a>
+    <a class="edit" href="/dishes/@Model.DishId/edit">Edit</a>
+  </div>
 </div>

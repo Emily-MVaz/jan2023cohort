@@ -1,0 +1,68 @@
+.dish-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.75em;
+}
+.dish-container section label {
+  margin-bottom: 0.25em;
+  color: #ff8c2f;
+  font-weight: 500;
+}
+.dish-container section input {
+  border: 2px solid #8d8d8d;
+}
+.dish-container section span {
+  font-size: 0.65em;
+}
+.dish-container .section1 {
+  width: 25%;
+}
+.dish-container .section1 section {
+  margin-bottom: 1.5em;
+}
+.dish-container .section1 .chef {
+  display: flex;
+  flex-direction: column;
+}
+.dish-container .section1 .dish {
+  display: flex;
+  flex-direction: column;
+}
+.dish-container .section1 .calories {
+  display: flex;
+  flex-direction: column;
+}
+.dish-container .section2 {
+  width: 15%;
+}
+.dish-container .section2 .tasty {
+  display: flex;
+  flex-direction: column;
+}
+.dish-container .section2 select {
+  border: 2px solid #8d8d8d;
+}
+.dish-container .section3 {
+  width: 35%;
+}
+.dish-container .section3 .text-box {
+  display: flex;
+  flex-direction: column;
+}
+.dish-container .section3 textarea {
+  border: 2px solid #8d8d8d;
+}
+.dish-container .section3 button {
+  width: 30%;
+  margin: 1em 0 0 12.75em;
+  background-color: #ffb477;
+  color: white;
+  border: none;
+  border-radius: 0.25em;
+}
+.dish-container .section3 button:hover {
+  background-color: #ff8c2f;
+}
+.dish-container .section3 #update-button {
+  width: fit-content;
+}

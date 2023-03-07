@@ -1,0 +1,44 @@
+.info-container {
+  padding-top: 1em;
+  height: 100%;
+}
+.info-container .dish-info {
+  padding-left: 3em;
+}
+.info-container .dish-info h3 {
+  font-size: 3em;
+  color: #ff8c2f;
+  padding-bottom: 0.25em;
+  border-bottom: 3px solid #ff8c2f;
+  width: fit-content;
+}
+.info-container .dish-info p {
+  font-size: 2em;
+}
+.info-container .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0;
+  margin-top: 10em;
+}
+.info-container .buttons a {
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0.45em;
+  border-radius: 0.35em;
+  width: 8%;
+}
+.info-container .buttons .delete {
+  background-color: #ff777e;
+}
+.info-container .buttons .delete:hover {
+  background-color: #ff444e;
+}
+.info-container .buttons .edit {
+  background-color: #77c2ff;
+}
+.info-container .buttons .edit:hover {
+  background-color: #44abff;
+}

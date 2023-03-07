@@ -26,7 +26,7 @@ public class UserController : Controller
   [HttpGet("success")]
   public IActionResult Success()
   {
-    return View("Success");
+    return View("success");
   }
 
   [HttpPost("/register")]
@@ -42,7 +42,7 @@ public class UserController : Controller
     _context.Users.Add(user);
     _context.SaveChanges();
     HttpContext.Session.SetInt32("UserId", user.UserId);
-    return RedirectToAction("Success");
+    return RedirectToAction("success");
   }
 
   [HttpPost("/login")]
@@ -73,7 +73,7 @@ public class UserController : Controller
         {
           HttpContext.Session.SetInt32("UserId", userInDb.UserId);
           HttpContext.Session.SetString("FirstName", userInDb.FirstName);
-          return RedirectToAction("Success");
+          return RedirectToAction("success");
         }
       }
     }

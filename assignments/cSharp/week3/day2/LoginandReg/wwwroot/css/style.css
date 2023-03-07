@@ -47,6 +47,13 @@ hr {
   font-size: 2em;
   padding: 0.25em 0.5em;
 }
+
+#logout a{
+  text-decoration: none;
+  color: white;
+}
+
+
 #success {
   color: #abcc88;
   font-size: 15em;

@@ -1,0 +1,89 @@
+@{ ViewData["Title"] = "Home Page"; }
+
+<head>
+  <link rel="stylesheet" href="~/css/style.css" />
+  <link rel="stylesheet" href="~/css/layout.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Dongle:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet"
+  />
+</head>
+
+@model User
+
+<main>
+  <!--+---------------------------REGISTER----------------------------->
+  <div class="registration-form">
+    <form asp-action="Register" asp-controller="User" method="post">
+      <div class="container">
+        <h1>Register</h1>
+        <hr />
+        <!--*----------------------FIRST NAME------------------------>
+        <div>
+          <label asp-for="FirstName"><b>First Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            asp-for="FirstName"
+            id="FirstName"
+            required
+          />
+          <span asp-validation-for="FirstName"></span>
+        </div>
+        <!--*----------------------lAST NAME------------------------>
+        <div>
+          <label asp-for="LastName"><b>Last Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            asp-for="LastName"
+            id="LastName"
+            required
+          />
+        </div>
+        <span asp-validation-for="LastName"></span>
+        <!--*------------------------EMAIL-------------------------->
+        <div>
+          <label asp-for="Email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            asp-for="Email"
+            id="Email"
+            required
+          />
+          <span asp-validation-for="Email"></span>
+        </div>
+        <!--*----------------------PASSWORD------------------------->
+        <div>
+          <label asp-for="Password"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            asp-for="Password"
+            id="Password"
+            required
+          />
+        </div>
+        <span asp-validation-for="Password"></span>
+        <!--*----------------------CONFIRM------------------------->
+        <div>
+          <label asp-for="PasswordConfirm"><b>Confirm Password</b></label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            asp-for="PasswordConfirm"
+            id="PasswordConfirm"
+            required
+          />
+          <span asp-validation-for="PasswordConfirm"></span>
+        </div>
+        <hr />
+        <!--*----------------------BUTTON------------------------->
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </form>
+  </div>
+
+  @await Html.PartialAsync("login")
+</main>

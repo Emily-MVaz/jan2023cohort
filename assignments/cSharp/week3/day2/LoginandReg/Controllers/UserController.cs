@@ -16,12 +16,15 @@ public class UserController : Controller
     _context = context;
   }
 
+
+//* -----------------------------INDEX----------------------------- 
   [HttpGet("")]
   public IActionResult Index()
   {
     return View("Index");
   }
 
+//* -----------------------------SESSION----------------------------- 
   [SessionCheck]
   [HttpGet("success")]
   public IActionResult Success()
@@ -29,6 +32,7 @@ public class UserController : Controller
     return View("success");
   }
 
+//* -----------------------------REGISTER----------------------------- 
   [HttpPost("/register")]
   public IActionResult Register(User user)
   {
@@ -45,6 +49,7 @@ public class UserController : Controller
     return RedirectToAction("success");
   }
 
+//* -----------------------------LOGIN----------------------------- 
   [HttpPost("/login")]
   public IActionResult Login(LoginUser getUser)
   {
@@ -79,6 +84,7 @@ public class UserController : Controller
     }
   }
 
+//* -----------------------------LOGOUT----------------------------- 
   [HttpPost("/logout")]
   public IActionResult Logout()
   {
